@@ -1,43 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #dee1d5;
+    background-color: #dde1d4;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 200px 200px 300px;
-    grid-template-rows: 100px 400px 250px 100px;
-    grid-template-areas: 
-    "header header header"
-    "content content content"
-    "nav nav nav"
-    "footer footer footer";
+    grid-template-columns: repeat(6,120px);
+    grid-template-rows: repeat(10,80px);
+    grid-gap: 10px;
 }
 
 .header {
     background-color: #010101;
-    grid-area: header;
-    color: white;
-}
+    grid-column-start: 1;
+    grid-column-end: 6;
 
+    display: grid;
+    grid-template-rows: repeat(10,8px);
+    color:white;
+    font-size: 15px;
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+.upcoming {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:6;
+    grid-row-end:6;
+}
+.lodge {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:6;
+    grid-row-end:6;
+}
+.hope {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:6;
+    grid-row-end:6;
+}
+.hardcore {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:8;
+    grid-row-end:8;
+}
+.newyork {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:8;
+    grid-row-end:8;
+}
+.june {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:8;
+    grid-row-end:8;
+}
 .content {
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end:6;
     background-color: #de4f2b;
-    grid-area: content;
-    font-size: 200;
-    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-rows: repeat(20,8px);
+}
+.bad {
+    font-size: 200px;
+    grid-row-start:19;
 }
 
 .nav {
+    
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start:2;
+    grid-row-end:6;
     background-color: #de4f2b;
-    grid-area: nav;
-    font-size: 200;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
+
 .footer {
-    background-color:  #de4f2b;
-    grid-area: footer;
-    font-size: 30;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start:6;
+    grid-row-end:10;
+    background-color: #de4f2b;
+    
+    
+
+    display: grid;
+    grid-template-rows: repeat(10,8px);
+}
+
+.religion {
+    line-height: 160px;
+    color:#010101;
+    font-size: 200px;
+}
+
+.with {
+    line-height: 400px;
     color: #dee1d5;
+    font-size: 30px;
+}
+.jawbreaker {
+    line-height: 450px;
+    color: #dee1d5;
+    font-size: 30px;
 }
