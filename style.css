@@ -1,86 +1,43 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width:100vh;
-    margin-left:2%;
-    height: 100vh;
-}
-.topLetter {
-display: flex;
-flex-flow:wrap row;
-justify-content: space-between;
-
-
+    background: #dee1d5;
 }
 
-.paris {
-    color: black;
-    font-size: 100px;
-    
-    height: 7%;
-}
-.zeroSix {
-    color: black;
-    font-size: 33px;
-    
-    margin-top: 12%;
-    
-}
-.line {
-    border-top: 3px solid black;
-    height: 3%;
-    
-}
-.middle1 {
-    flex-flow: wrap column;
-    width:100%;
-    height: 0%;
-    font-size: 10px;
-    
-}
-.middle2 {
-    flex-flow: wrap column;
-    width:100%;
-    height: 30%;
-    margin-left: 150px;
-    height: 0%;
-    font-size: 10px;
-}
-.middle3 {
-    flex-flow: wrap column;
-    width:100%;
-    height: 30%;
-    margin-left: 75%;
-    font-size: 10px;
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 300px;
+    grid-template-rows: 100px 400px 250px 100px;
+    grid-template-areas: 
+    "header header header"
+    "content content content"
+    "nav nav nav"
+    "footer footer footer";
 }
 
-.circles {
-    display: flex;
-    flex-flow: row wrap;
-}
-.circle {
-    margin-top: 2%;
-    margin-left: 2%;
-    border-radius: 50%;
-    width: 30vh;
-    height: 30vh;
-    justify-content: space-around;
-    align-content: space-around;
-    margin-top: 2vh;
-    margin-left: 2vh;
-}
-.circle:nth-child(1){
-    background: skyblue;
-    
-}
-.circle:nth-child(2){
-    background: gray;
-    
-}
-.circle:nth-child(3){
-    background: green;
-    
+.header {
+    background-color: #010101;
+    grid-area: header;
+    color: white;
 }
 
+.content {
+    background-color: #de4f2b;
+    grid-area: content;
+    font-size: 200;
+    font-family: 'Roboto', sans-serif;
+}
 
+.nav {
+    background-color: #de4f2b;
+    grid-area: nav;
+    font-size: 200;
+    font-family: 'Roboto', sans-serif;
+}
 
+.footer {
+    background-color:  #de4f2b;
+    grid-area: footer;
+    font-size: 30;
+    color: #dee1d5;
+}
