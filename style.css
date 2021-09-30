@@ -1,117 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #dde1d4;
+    /* background-color:#DDE1D4; */
+    padding:15px;
+    width: 100%;
+    height: 100vh;
+    margin:0 auto;
+    text-align:center;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(6,120px);
-    grid-template-rows: repeat(10,80px);
-    grid-gap: 10px;
-}
-
-.header {
-    background-color: #010101;
-    grid-column-start: 1;
-    grid-column-end: 6;
-
-    display: grid;
-    grid-template-rows: repeat(10,8px);
-    color:white;
-    font-size: 15px;
-
-    flex-direction: row;
-    justify-content: space-around;
-}
-.upcoming {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start:6;
-    grid-row-end:6;
-}
-.lodge {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:6;
-    grid-row-end:6;
-}
-.hope {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start:6;
-    grid-row-end:6;
-}
-.hardcore {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start:8;
-    grid-row-end:8;
-}
-.newyork {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:8;
-    grid-row-end:8;
-}
-.june {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start:8;
-    grid-row-end:8;
-}
-.content {
-    
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start:2;
-    grid-row-end:6;
-    background-color: #de4f2b;
-    display: grid;
-    grid-template-rows: repeat(20,8px);
-}
-.bad {
-    font-size: 200px;
-    grid-row-start:19;
-}
-
-.nav {
-    
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start:2;
-    grid-row-end:6;
-    background-color: #de4f2b;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(4,100px);
     
 }
 
-
-.footer {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start:6;
-    grid-row-end:10;
-    background-color: #de4f2b;
+.Ostrich1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #dae7de;
     
+    color: #f44707;
+    font-size: 40px;
+    line-height: 200px;
+}
+.Ostrich2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #018a69;
+
+    color: white;
+    font-size: 40px;
+    line-height: 200px;
+}
+.Ostrich3 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #f44707;
     
-
-    display: grid;
-    grid-template-rows: repeat(10,8px);
+    color: white;
+    font-size: 40px;
+    line-height: 200px;
 }
+.Ostrich4 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #f6adc1;
 
-.religion {
-    line-height: 160px;
-    color:#010101;
-    font-size: 200px;
+    color: #f44707;
+    line-height: 100px;
 }
+.Ostrich5 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #5f5fa9;
 
-.with {
-    line-height: 400px;
-    color: #dee1d5;
-    font-size: 30px;
+    color: white;
+    line-height: 100px;
 }
-.jawbreaker {
-    line-height: 450px;
-    color: #dee1d5;
-    font-size: 30px;
+.Ostrich6 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #ffc128;
+
+    color: #f44707;
+    line-height: 100px;
+}
+.Ostrich7 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #f97374;
+
+    color: white;
+    line-height: 100px;
 }
