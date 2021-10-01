@@ -2,76 +2,88 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* background-color:#DDE1D4; */
-    padding:15px;
     width: 100%;
     height: 100vh;
-    margin:0 auto;
-    text-align:center;
+    text-align: center;
 }
 
 .grid {
+    color: white;
     display: grid;
-    grid-template-columns: repeat(4,200px);
-    grid-template-rows: repeat(4,100px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 300px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
     
 }
 
-.Ostrich1 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #dae7de;
+
+.item:nth-child(1){
+    background: url('./img/groomy.jpeg');
+    background-size: contain;
+    color: black;
+    /* background-color: blue; */
+}
+
+.item:nth-child(2){
+    background-size: contain;
+    background-color:skyblue;
     
-    color: #f44707;
-    font-size: 40px;
-    line-height: 200px;
 }
-.Ostrich2 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #018a69;
+.item:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
 
-    color: white;
-    font-size: 40px;
-    line-height: 200px;
-}
-.Ostrich3 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #f44707;
+.item:nth-child(3){
+    background: url('./img/rainy.jpeg');
+    background-size: contain;
+    color: black;
     
-    color: white;
-    font-size: 40px;
-    line-height: 200px;
 }
-.Ostrich4 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #f6adc1;
 
-    color: #f44707;
-    line-height: 100px;
+.item:nth-child(4){
+    background-color: chocolate;
 }
-.Ostrich5 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #5f5fa9;
 
-    color: white;
-    line-height: 100px;
+.item:nth-child(5){
+    background: url("./img/Sunny.jpeg");
+    background-size: contain;
+    background-color: darkgreen;
 }
-.Ostrich6 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #ffc128;
 
-    color: #f44707;
-    line-height: 100px;
+.item:nth-child(6){
+    background-color: #8e44ad;
 }
-.Ostrich7 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #f97374;
 
-    color: white;
-    line-height: 100px;
+.item:nth-child(7){
+    background: url('./img/thunder.jpeg');
+    background-size: contain;
+    background-color: deepskyblue;
+    color: black;
+}
+
+.item:nth-child(8){
+    background-color: #2ecc71;
+}
+
+.item:nth-child(9){
+    background: url("./img/tornado.jpeg");
+    background-size: contain;
+}
+
+.item:nth-child(10){
+    background-color: #3498db;
+   
+}
+.item:nth-child(11){
+    background: url("./img/windy.jpeg");
+    background-size: contain;
+}
+
+.item:nth-child(12){
+    background-color: #74cc12;
+   
 }
