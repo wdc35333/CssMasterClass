@@ -6,72 +6,62 @@ body {
     width: 100%;
     height: 100vh;
     margin:0 auto;
-    text-align:center;
+    background: black;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4,200px);
-    grid-template-rows: repeat(4,100px);
+    grid-template-rows: repeat(3,200px);
     
 }
 
-.Ostrich1 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #dae7de;
+.changes {
+    grid-column: 1/ 2;
+    grid-row: 1 / 2;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+}
+.purple {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #6c01ff;
+
+    font-size: 40px;
     
-    color: #f44707;
-    font-size: 40px;
-    line-height: 200px;
 }
-.Ostrich2 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #018a69;
-
-    color: white;
-    font-size: 40px;
-    line-height: 200px;
-}
-.Ostrich3 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #f44707;
+.bigwhite {
+    grid-column: 3 / 5;
+    grid-row: 1 / 4;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: row;
+    color: 000000;
+    /* font-size: 12px; */
     
-    color: white;
-    font-size: 40px;
-    line-height: 200px;
 }
-.Ostrich4 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #f6adc1;
+.about {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-color: #ff1502;
 
-    color: #f44707;
-    line-height: 100px;
+    color: #000000;
+   
 }
-.Ostrich5 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #5f5fa9;
+.smallwhite {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #ffffff;
 
     color: white;
-    line-height: 100px;
+    
 }
-.Ostrich6 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #ffc128;
+.tickets {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: #ffc905;
 
-    color: #f44707;
-    line-height: 100px;
-}
-.Ostrich7 {
-    grid-column: span 1;
-    grid-row: span 1;
-    background-color: #f97374;
-
-    color: white;
-    line-height: 100px;
+    color: #000000;
+    
 }
