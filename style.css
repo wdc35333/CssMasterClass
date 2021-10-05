@@ -3,7 +3,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     /* background-color:#DDE1D4; */
-    background-color: #e3c8cf;
+    background-color: #1485c7;
     text-align: center;
     
 }
@@ -16,14 +16,14 @@ body {
     grid-template-columns: 1fr 20fr 20fr 1fr;
  
     gap: 5px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 700;
 }
 .top {
     display: flex;
     grid-column: span 4;
     grid-row: span 1;
-    color: #e3c8cf;
+    color: #1485c7;
     background-color: white;
     margin-top: 5px;
 }
@@ -59,14 +59,13 @@ section {
     font-weight: 1000;
 }
 .left {
-    background-color: #e3c8cf;
+    background-color: #1485c7;
     grid-row: span 1;
     grid-column: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
 }
 .left1 {
     writing-mode: vertical-lr;
@@ -76,13 +75,13 @@ section {
 .left2 {
     writing-mode:vertical-lr;
     text-orientation: sideways;
-    color: #e3c8cf;
+    color: #1485c7;
     background-color: white;
 }
 .left3 {
     writing-mode: vertical-lr;
-    text-orientation: sideways-right;
-    color: #e3c8cf;
+    text-orientation: sideways;
+    color: #1485c7;
     background-color: white;
 }
 .right {
@@ -95,13 +94,13 @@ section {
     color: white;
 }
 .right1 {
-    background-color: #1485c7;
+    background-color: #e3c8cf;
     writing-mode: vertical-lr;
     text-orientation: upright;
     color: white;
 }
 .right2 {
-    background-color: #1485c7;
+    background-color: #e3c8cf;
     writing-mode: vertical-lr;
     text-orientation: upright;
     color: white;
@@ -110,7 +109,7 @@ section {
 .bottom {
     grid-column: span 4;
     grid-row: span 1;
-    color: #e3c8cf;
+    color: #1485c7;
     background-color: white;
     margin-bottom: 5px;;
 }
