@@ -3,52 +3,77 @@
 body {
     font-family: "DM Serif Display", monospace;
     padding: 45px;
+    height: 100vh;
+    text-align: center;
 }
 
 header {
-    background-color: black;
-    border: 1px solid black;
-    
-}
-div {
     display: grid;
-    gap: 1px;
-    grid-template-columns: repeat(5 ,minmax(min-content,1fr));
-    grid-template-rows: repeat(1, 60px);
-}
-header select {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 60% 40%;
+
 }
 
-.arts {
-    background-color: black;
-    border: 1px solid black;
+.left {
     display: grid;
-    gap: 1px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color:skyblue;
 }
-.product {
+ .left-horizontal {
+     display: grid;
+    grid-template-columns: 1fr 17fr 6fr;
+    border: 2px solid white;
+ }
+ .title {
+    writing-mode: vertical-rl;
+    text-orientation:sideways;
+    border-right: 2px solid white;
+ }
+ .name {
+     border-right: 2px solid white;
+ }
+ .sectors {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .right {
+
+     display: grid;
+     grid-template-columns: 1fr 11fr;
+ }
+
+ .mid-line {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items:center;
+     writing-mode: vertical-rl;
+     text-orientation:sideways-right;
+     /* text-orientation: mixed; */
+ }
+ .mid-line div:nth-child(1) {
+     background-color: cornflowerblue;
+     
+ }
+ .mid-line div:nth-child(2) {
+    text-orientation: sideways-right;
+     background-color: purple;
+ }
+ section {
+    background-color: green;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    background-color: white;
-    border: 2px solid black;
-    padding: 10px;
-    text-align: center;
-}
-img {
-    background-size: contain;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.information {
-    display: flex;
-    justify-content: space-between;
-}
+    grid-template-rows: 1fr 11fr;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ ul {
+    list-style: none;
+ }
+ h1 {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     grid-column-start: span 2;
+ }
