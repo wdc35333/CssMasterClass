@@ -18,7 +18,7 @@ main {
     border: 2px solid black;
 }
 .content {
-    background-color: #77878F;
+    /* background-color: #77878F; */
     grid-row: span 1;
 }
 .content div:first-child {
@@ -35,13 +35,13 @@ main {
     height: 60%;
 }
 .menu th {
-    background-color: gray;
+    /* background-color: gray; */
 }
 .information {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #88A3AD;
+    /* background-color: #88A3AD; */
     grid-row: span 1;
     font-size: 15px;
 }
@@ -51,7 +51,7 @@ main {
 }
 .letter-right-top {
     grid-row: span 1;
-    background-color: #AAB9BD;
+    /* background-color: #AAB9BD; */
     border: 2px solid black;
 }
 .letter-right-top div:first-child {
@@ -67,7 +67,7 @@ main {
 }
 .letter-right-bottom {
     grid-row: span 1;
-    background-color: #CCCACA;
+    /* background-color: #CCCACA; */
     border: 2px solid black;
 }
 .letter-right-bottom div:first-child {
@@ -87,7 +87,8 @@ main {
 }
 .picture-left {
     grid-column: span 1;
-    background-color: #6F5A63;
+    /* background-color: #6F5A63; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 
@@ -100,7 +101,8 @@ main {
 }
 .picture-right-top {
     grid-column: span 3;
-    background-color: #EDD8CA;
+    /* background-color: #EDD8CA; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-right-mid{
@@ -108,12 +110,14 @@ main {
     grid-column: span 3;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-right-mid-left{
     grid-column: span 2;
     grid-row: span 2;
-    background-color: #EEC0B7;
+    /* background-color: #EEC0B7; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-right-mid-right{
@@ -123,12 +127,14 @@ main {
 }
 .picture-right-mid-right section:first-child {
     grid-row: span 1;
-    background-color: #CF767A;
+    /* background-color: #CF767A; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-right-mid-right section:last-child {
     grid-row: span 1;
-    background-color: #6F5A63;
+    /* background-color: #6F5A63; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-right-bot {
@@ -138,12 +144,14 @@ main {
 }
 .picture-right-bot section:first-child {
     grid-column: span 1;
-    background-color: #4E4446;
+    /* background-color: #4E4446; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-right-bot section:last-child {
     grid-column: span 1;
-    background-color: #7A7085;
+    /* background-color: #7A7085; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-footer {
@@ -153,7 +161,8 @@ main {
 }
 .picture-footer section:nth-child(1) {
     grid-column: span 1;
-    background-color: #758B66;
+    /* background-color: #758B66; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-footer section:nth-child(2) {
@@ -164,16 +173,19 @@ main {
 }
 .picture-footer-child2 section:first-child {
     grid-row: span 1;
-    background-color: #C3C88A;
+    /* background-color: #C3C88A; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-footer-child2 section:last-child {
     grid-row: span 1;
-    background-color: #88A3AD;
+    /* background-color: #88A3AD; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
 .picture-footer section:nth-child(3) {
     grid-column: span 3;
-    background-color: #92808A;
+    /* background-color: #92808A; */
+    background-image: url(img/sofa1.png);
     border: 2px solid black;
 }
