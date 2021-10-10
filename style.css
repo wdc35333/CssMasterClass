@@ -15,10 +15,11 @@ main {
 .letter-left {
     display: grid;
     grid-template-rows: 4fr 1fr 3fr;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
 }
 .content {
-    /* background-color: #77878F; */
     grid-row: span 1;
 }
 .content div:first-child {
@@ -30,20 +31,22 @@ main {
     font-size: 25px;
 }
 .menu {
-    border: 2px solid black;
     width: 100%;
     height: 60%;
 }
 .menu th {
-    /* background-color: gray; */
+    text-align: start;
 }
 .information {
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background-color: #88A3AD; */
     grid-row: span 1;
     font-size: 15px;
+}
+.english:hover,.korean:hover {
+    font-weight: 800;
 }
 .letter-right {
     display: grid;
@@ -51,8 +54,9 @@ main {
 }
 .letter-right-top {
     grid-row: span 1;
-    /* background-color: #AAB9BD; */
-    border: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 .letter-right-top div:first-child {
     padding: 10px;
@@ -67,8 +71,8 @@ main {
 }
 .letter-right-bottom {
     grid-row: span 1;
-    /* background-color: #CCCACA; */
-    border: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
 }
 .letter-right-bottom div:first-child {
     padding: 10px;
@@ -83,13 +87,12 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 4fr 1fr;
-    
+    border: 2px solid black;
 }
 .picture-left {
     grid-column: span 1;
-    /* background-color: #6F5A63; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/sofa1.jpeg);
+    background-size: cover;
 }
 
 .picture-right {
@@ -97,28 +100,27 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
-    border: 2px solid black;
+    border-left: 2px solid black;
 }
 .picture-right-top {
     grid-column: span 3;
-    /* background-color: #EDD8CA; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/office1.jpeg);
+    background-size: cover;
+    border-bottom: 2px solid black;
 }
 .picture-right-mid{
     display: grid;
     grid-column: span 3;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-size: cover;
 }
 .picture-right-mid-left{
     grid-column: span 2;
     grid-row: span 2;
-    /* background-color: #EEC0B7; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/flowerpot.jpeg);
+    background-size: cover;
+    
 }
 .picture-right-mid-right{
     display: grid;
@@ -127,15 +129,16 @@ main {
 }
 .picture-right-mid-right section:first-child {
     grid-row: span 1;
-    /* background-color: #CF767A; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/waterbottle.jpeg);
+    background-size: cover;
+    border-left: 2px solid black;
 }
 .picture-right-mid-right section:last-child {
     grid-row: span 1;
-    /* background-color: #6F5A63; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/jagi.jpeg);
+    background-size: cover;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 }
 .picture-right-bot {
     grid-column: span 3;
@@ -144,15 +147,16 @@ main {
 }
 .picture-right-bot section:first-child {
     grid-column: span 1;
-    /* background-color: #4E4446; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/chair.png);
+    background-size: cover;
+    border-top: 2px solid black;
 }
 .picture-right-bot section:last-child {
     grid-column: span 1;
-    /* background-color: #7A7085; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/office2.jpeg);
+    background-size: cover;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 }
 .picture-footer {
     display: grid;
@@ -161,9 +165,9 @@ main {
 }
 .picture-footer section:nth-child(1) {
     grid-column: span 1;
-    /* background-color: #758B66; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/writing.jpeg);
+    background-size: cover;
+    border-top: 2px solid black;
 }
 .picture-footer section:nth-child(2) {
     grid-column: span 1;
@@ -173,19 +177,21 @@ main {
 }
 .picture-footer-child2 section:first-child {
     grid-row: span 1;
-    /* background-color: #C3C88A; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/callingcard.jpeg);
+    background-size: cover;
+    border-left: 2px solid black;
 }
 .picture-footer-child2 section:last-child {
     grid-row: span 1;
-    /* background-color: #88A3AD; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/meeting.jpeg);
+    background-size: cover;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 }
 .picture-footer section:nth-child(3) {
     grid-column: span 3;
-    /* background-color: #92808A; */
-    background-image: url(img/sofa1.png);
-    border: 2px solid black;
+    background-image: url(img/blueprint.jpeg);
+    background-size: cover;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
 }
